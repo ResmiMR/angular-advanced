@@ -1,0 +1,31 @@
+<p>user-dashboard works!</p>
+
+<p> Employee list using Employee interface</p>
+<div *ngFor="let e of employeeList">
+   <p> {{e.firstName}} {{e.lastName}}</p>
+</div>
+
+
+<p> Employee list using user class</p>
+<div *ngFor="let e of usersList">
+   <p> {{e.getName()}} </p>
+</div>
+
+<hr>
+
+<h3>Employees List</h3>
+<a *ngFor="let emp of empsList">
+   <div>
+       <h5>{{emp.firstName | uppercase | lowercase }} {{' '+ emp.lastName}}</h5>
+   </div>
+</a>
+
+<h3>Using of Pipes</h3>
+
+<p>{{ 5 | currency:'EUR'}}</p>
+
+<h3>Using of Custom Pipes</h3>
+
+<p>{{ 5 | custom}}</p>
+
+pure and impure pipes
