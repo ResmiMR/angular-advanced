@@ -28,4 +28,29 @@
 
 <p>{{ 5 | custom}}</p>
 
-pure and impure pipes
+Async Pipes
+<p class="card-text">{{observable$ | async }}</p>
+
+Generics
+
+<h3>number List</h3>
+<a *ngFor="let num of myNumArr">
+   <div>
+       <h5>{{num }}</h5>
+   </div>
+</a>
+
+<h1>Hello</h1>
+
+<ng-template>
+  <h2>How are you</h2>
+</ng-template>
+
+
+<div *ngIf="hasData else loading">
+Testdata
+</div>
+
+<ng-template #loading>
+   <div>Loading...</div>
+</ng-template>
